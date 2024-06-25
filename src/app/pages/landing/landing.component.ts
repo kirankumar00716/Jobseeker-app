@@ -62,4 +62,10 @@ export class LandingComponent implements AfterViewInit {
   redirectToLogin() {
     this.router.navigate(['/landing/login']);
   }
+  redirectSignup() {
+    this.router.navigate(['/landing/signup']);
+  }
+  redirectToServices() {
+    this.router.navigate(['/dashboard/services']);
+  }
 }

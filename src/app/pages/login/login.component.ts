@@ -31,4 +31,7 @@ export class LoginComponent {
       alert('Please enter email and password');
     }
   }
+  redirectToLanding() {
+    this.router.navigate(['/landing']);
+  }
 }

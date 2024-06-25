@@ -3,6 +3,8 @@ import { Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { LayoutComponent } from './pages/layout/layout.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { ServicesComponent } from './services/services.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'landing', pathMatch: 'full' },
@@ -17,6 +19,10 @@ export const routes: Routes = [
     // ],
   }, // Added closing brace here
   {
+    path: 'landing/signup',
+    component: SignupComponent,
+  },
+  {
     path: 'landing',
     component: LandingComponent,
   },
@@ -27,6 +33,10 @@ export const routes: Routes = [
       {
         path: 'dashboard',
         component: DashboardComponent,
+      },
+      {
+        path: 'Services',
+        component: ServicesComponent,
       },
     ],
   },

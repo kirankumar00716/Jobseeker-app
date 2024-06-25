@@ -1,44 +1,151 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Login App</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        Search
+      </button>
+    </form>
+  </div>
+</nav> -->
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+
+<!----======== CSS ======== -->
+<link rel="stylesheet" href="layout.component.css" />
+
+<!----===== Boxicons CSS ===== -->
+<link
+  href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+
+<div class="parent">
+  <nav class="sidebar open">
+    <header>
+      <div class="logo-text" style="display: inline-block">
+        <span class="name">🎯 Candiate Protal</span>
+      </div>
+
+      <!-- <i class="bx bx-chevron-right toggle"></i> -->
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+        <li class="search-box">
+          <i class="bx bx-search icon"></i>
+          <input type="text" placeholder="Search..." />
         </li>
 
-        <li class="nav-item">
-          <a
-            class="nav-link disabled"
-            href="#"
-            tabindex="-1"
-            aria-disabled="true"
-            >Disabled</a
-          >
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-home-alt icon"></i>
+              <span class="text nav-text">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-bar-chart-alt-2 icon"></i>
+              <span class="text nav-text">Services</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-bell icon"></i>
+              <span class="text nav-text">Notifications</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-pie-chart-alt icon"></i>
+              <span class="text nav-text">Analytics</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-heart icon"></i>
+              <span class="text nav-text">Likes</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-wallet icon"></i>
+              <span class="text nav-text">Wallets</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bottom-content">
+        <li class="">
+          <a (click)="redirectToLogin()" class="btn">
+            <i class="bx bx-log-out icon"></i>
+            <span class="text nav-text">Logout</span>
+          </a>
         </li>
-      </ul>
-      <form class="d-flex">
-        <button class="btn btn-success" type="button" (click)="logoff()">
-          Log-Off
-        </button>
-      </form>
+      </div>
     </div>
-  </div>
-</nav>
-<div class="container">
-  <router-outlet></router-outlet>
+  </nav>
+
+  <section class="home" style="background-color: aliceblue">
+    <div class="text"></div>
+    <app-dashboard></app-dashboard>
+  </section>
+
+  <script src="./layout.component.ts"></script>
 </div>

@@ -18,6 +18,9 @@
         </div>
 
         <button type="submit" class="btn" [disabled]="loading">Login</button>
+        <button (click)="redirectToLanding()" class="btn" [disabled]="loading">
+          Go Back
+        </button>
         <div *ngIf="loading" class="loading-spinner"></div>
       </form>
     </div>
