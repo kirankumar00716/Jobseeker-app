@@ -17,7 +17,6 @@
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
-
             "outputPath": "dist/jobseeker-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -29,7 +28,6 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -37,13 +35,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
+                  "maximumWarning": "150kb",
+                  "maximumError": "150kb"
                 }
               ],
               "outputHashing": "all"

@@ -1,5 +1,5 @@
 /* Google Font Import - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"); */
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +54,7 @@ body.dark {
   background: var(--sidebar-color);
   transition: var(--tran-05);
   z-index: 100;
+  border: solid 1px #3a3b3c4f;
 }
 .sidebar.close {
   width: 88px;
@@ -306,8 +307,6 @@ body.dark .switch::before {
 }
 body.dark .home .text {
   color: var(--text-color);
-}
-.nav-link {
 }
 .nav-link:hover {
   background-color: rgba(0, 0, 0, 0.082);

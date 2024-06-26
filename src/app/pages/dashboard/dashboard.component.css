@@ -31,7 +31,6 @@ body {
   border-spacing: 0;
   margin-top: 20px;
   border-radius: 10px;
-  margin: 10px;
 }
 
 .table-box th {
@@ -193,4 +192,8 @@ footer {
   align-items: center;
   cursor: pointer;
   width: 5%;
+}
+.para {
+  margin: 10px;
+  font-size: 1rem;
 }
